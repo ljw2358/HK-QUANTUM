@@ -3,215 +3,255 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PHK-QUANTUM</title>
+<title>PHK QUANTUM | Future Beyond Limits</title>
 
 <style>
 body{
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg,#2b004f,#5e1e9c);
+    font-family: 'Segoe UI', sans-serif;
+    background:#050510;
     color:white;
+}
+header{
+    background:linear-gradient(90deg,#2a0066,#6a00ff);
+    padding:60px 20px;
     text-align:center;
 }
-
-header{
-    padding:40px 20px;
+header h1{
+    font-size:48px;
+    margin:0;
 }
-
-h1{
-    font-size:42px;
-    letter-spacing:3px;
-    margin-bottom:10px;
+header p{
+    font-size:20px;
+    opacity:0.9;
 }
-
-h2{
-    font-weight:300;
-    margin-bottom:30px;
+nav{
+    background:#111122;
+    text-align:center;
+    padding:15px;
 }
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
-}
-
-.section{
-    display:none;
-    animation: fade 0.6s ease-in-out;
-}
-
-.section.active{
-    display:block;
-}
-
-@keyframes fade{
-    from{opacity:0;}
-    to{opacity:1;}
-}
-
-button{
-    padding:10px 18px;
-    margin:5px;
-    border:none;
-    border-radius:6px;
-    background:white;
-    color:#4b0082;
+nav a{
+    color:#a98fff;
+    margin:0 15px;
+    text-decoration:none;
     font-weight:bold;
+}
+section{
+    padding:60px 10%;
+}
+h2{
+    color:#b266ff;
+    margin-bottom:20px;
+}
+.card{
+    background:#111133;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(138,43,226,0.3);
+}
+footer{
+    background:#0a0a1a;
+    text-align:center;
+    padding:40px;
+}
+button{
+    background:#6a00ff;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:16px;
     cursor:pointer;
 }
-
 button:hover{
-    background:#e5d3ff;
+    background:#9b30ff;
 }
-
-footer{
-    margin-top:60px;
-    padding:20px;
-    font-size:14px;
-    opacity:0.7;
-}
-
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>PHK-QUANTUM</h1>
-<h2>Quantum Intelligence. Energy. Sovereignty.</h2>
-
-<div>
-<button onclick="showLang('en')">English</button>
-<button onclick="showLang('ko')">한국어</button>
-<button onclick="showLang('zh')">中文</button>
-<button onclick="showLang('ar')">العربية</button>
-<button onclick="showLang('es')">Español</button>
-</div>
+    <h1>PHK QUANTUM</h1>
+    <p>Redefining Intelligence. Rebuilding Civilization.</p>
 </header>
 
-<div class="container">
+<nav>
+    <a href="#vision">Vision</a>
+    <a href="#technology">Technology</a>
+    <a href="#applications">Applications</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<!-- ENGLISH -->
-<div id="en" class="section active">
-<h2>Welcome to PHK-QUANTUM</h2>
-<p>
-PHK-QUANTUM is a next-generation innovation platform focused on Quantum Computing,
-Artificial Intelligence, and Energy Synchronization Systems.
-</p>
-<p>
-We build future architectures:
-• Quantum Security Networks  
-• AI + Quantum Hybrid Systems  
-• Energy Independence Models  
-• Digital Sovereignty Frameworks  
-• Advanced Scientific Infrastructure  
-</p>
-<p>
-This is not research alone.  
-This is civilization design.
-</p>
-</div>
+<section id="vision">
+    <h2>Our Vision</h2>
+    <div class="card">
+        <p>
+        PHK Quantum is not just a research initiative. 
+        It is a civilization-scale transformation project.
+        </p>
+        <p>
+        We aim to integrate Quantum Computing, AI, Robotics,
+        Fusion Energy, and Web3 financial systems into a single
+        adaptive intelligence network.
+        </p>
+        <p>
+        Our goal is simple but profound:
+        Create infrastructure powerful enough to eliminate
+        scarcity, inefficiency, and systemic imbalance.
+        </p>
+    </div>
+</section>
 
-<!-- KOREAN -->
-<div id="ko" class="section">
-<h2>PHK-QUANTUM에 오신 것을 환영합니다</h2>
-<p>
-PHK-QUANTUM은 양자컴퓨터, 인공지능, 에너지 동기화 시스템을 기반으로
-차세대 문명 인프라를 설계하는 혁신 플랫폼입니다.
-</p>
-<p>
-우리는 다음을 구축합니다:
-• 양자 보안 네트워크  
-• AI + 양자 융합 시스템  
-• 에너지 독립 구조  
-• 디지털 주권 프레임워크  
-• 첨단 과학 인프라  
-</p>
-<p>
-이것은 단순한 연구가 아닙니다.  
-문명의 설계입니다.
-</p>
-</div>
+<section id="technology">
+    <h2>Core Technologies</h2>
 
-<!-- CHINESE -->
-<div id="zh" class="section">
-<h2>欢迎来到 PHK-QUANTUM</h2>
-<p>
-PHK-QUANTUM 是一个专注于量子计算、
-人工智能与能源同步系统的未来创新平台。
-</p>
-<p>
-我们构建：
-• 量子安全网络  
-• 人工智能与量子混合系统  
-• 能源独立模型  
-• 数字主权框架  
-• 高端科学基础设施  
-</p>
-<p>
-这不仅仅是研究。  
-这是文明的设计。
-</p>
-</div>
+    <div class="card">
+        <h3>Quantum Computation Layer</h3>
+        <p>
+        Leveraging quantum algorithms for optimization,
+        cryptography, material science, and predictive modeling.
+        </p>
+        <p>
+        PHK Quantum envisions hybrid classical-quantum
+        architectures enabling near real-time strategic simulation.
+        </p>
+    </div>
 
-<!-- ARABIC -->
-<div id="ar" class="section" dir="rtl">
-<h2>مرحبًا بكم في PHK-QUANTUM</h2>
-<p>
-PHK-QUANTUM هي منصة ابتكار مستقبلية
-تركز على الحوسبة الكمومية والذكاء الاصطناعي
-وأنظمة مزامنة الطاقة.
-</p>
-<p>
-نقوم ببناء:
-• شبكات أمان كمومية  
-• أنظمة هجينة بين الذكاء الاصطناعي والكم  
-• نماذج استقلال الطاقة  
-• أطر السيادة الرقمية  
-• بنية تحتية علمية متقدمة  
-</p>
-<p>
-هذا ليس مجرد بحث.  
-إنه تصميم حضارة.
-</p>
-</div>
+    <div class="card">
+        <h3>AI Sovereign Core</h3>
+        <p>
+        Advanced artificial intelligence systems capable of
+        macroeconomic, geopolitical, and industrial modeling.
+        </p>
+        <p>
+        Self-evolving algorithms integrated with ethical
+        governance frameworks.
+        </p>
+    </div>
 
-<!-- SPANISH -->
-<div id="es" class="section">
-<h2>Bienvenido a PHK-QUANTUM</h2>
-<p>
-PHK-QUANTUM es una plataforma de innovación
-centrada en Computación Cuántica,
-Inteligencia Artificial y Sistemas de Sincronización Energética.
-</p>
-<p>
-Construimos:
-• Redes de Seguridad Cuántica  
-• Sistemas Híbridos IA + Cuántica  
-• Modelos de Independencia Energética  
-• Marcos de Soberanía Digital  
-• Infraestructura Científica Avanzada  
-</p>
-<p>
-No es solo investigación.  
-Es diseño de civilización.
-</p>
-</div>
+    <div class="card">
+        <h3>Quantum-Secure Web3 Infrastructure</h3>
+        <p>
+        Post-quantum cryptography protecting digital assets,
+        financial systems, and sovereign digital currencies.
+        </p>
+        <p>
+        Designed for resilience against future quantum threats.
+        </p>
+    </div>
 
-</div>
+    <div class="card">
+        <h3>Fusion Energy Simulation Engine</h3>
+        <p>
+        Computational modeling of plasma dynamics
+        and artificial sun energy systems.
+        </p>
+        <p>
+        Quantum-accelerated energy research
+        for limitless clean power.
+        </p>
+    </div>
+
+</section>
+
+<section id="applications">
+    <h2>Strategic Applications</h2>
+
+    <div class="card">
+        <h3>Global Financial Stability Modeling</h3>
+        <p>
+        Real-time macroeconomic simulation
+        for proactive crisis prevention.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Defense & Cybersecurity</h3>
+        <p>
+        Quantum-secure communication,
+        next-generation encryption,
+        predictive threat analysis.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Space Industry Optimization</h3>
+        <p>
+        Orbital mechanics optimization,
+        propulsion modeling,
+        extraterrestrial resource allocation.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Advanced Robotics Intelligence</h3>
+        <p>
+        Autonomous robotic systems guided
+        by quantum-optimized decision matrices.
+        </p>
+    </div>
+
+</section>
+
+<section id="roadmap">
+    <h2>Development Roadmap</h2>
+
+    <div class="card">
+        <h3>Phase 1 — Foundation</h3>
+        <p>
+        Infrastructure design, quantum partnerships,
+        AI core architecture development.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Phase 2 — Hybrid Integration</h3>
+        <p>
+        Integration of classical AI with quantum simulation layers.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Phase 3 — Global Deployment</h3>
+        <p>
+        Deployment into finance, energy, robotics,
+        and digital governance ecosystems.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Phase 4 — Civilization Scale Expansion</h3>
+        <p>
+        AI-governed infrastructure networks
+        supporting sustainable planetary systems.
+        </p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact & Investment</h2>
+    <div class="card">
+        <p>
+        PHK Quantum welcomes strategic partners,
+        research institutions, and visionary investors.
+        </p>
+        <p>
+        Email: info@phkfigure.com
+        </p>
+        <button onclick="location.href='mailto:info@phkfigure.com'">
+            Contact Us
+        </button>
+    </div>
+</section>
 
 <footer>
-© 2026 PHK-QUANTUM | Future Powered by Quantum Intelligence
+    <p>© 2026 PHK QUANTUM. All Rights Reserved.</p>
+    <p>Building the Intelligence Layer of the Future.</p>
 </footer>
-
-<script>
-function showLang(lang){
-    var sections = document.querySelectorAll('.section');
-    sections.forEach(function(sec){
-        sec.classList.remove('active');
-    });
-    document.getElementById(lang).classList.add('active');
-}
-</script>
 
 </body>
 </html>
