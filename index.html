@@ -3,248 +3,170 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PHK-QUANTUM</title>
+<title>PHK-QUANTUM | Future of Quantum Intelligence</title>
 
 <style>
-body{
+body {
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg,#1a0033,#4b0082,#6a0dad);
+    background:#0b0b1f;
     color:white;
+}
+header {
+    background:linear-gradient(90deg,#1a0033,#2d0066,#4b0082);
+    padding:40px;
     text-align:center;
 }
-
-header{
-    padding:50px 20px 30px 20px;
+h1 {font-size:42px; margin:0;}
+h2 {color:#b388ff;}
+section {
+    padding:50px 10%;
+    border-bottom:1px solid rgba(255,255,255,0.1);
 }
-
-h1{
-    font-size:44px;
-    letter-spacing:4px;
-    margin-bottom:10px;
-}
-
-h2{
-    font-weight:300;
-    margin-bottom:25px;
-}
-
-.container{
-    max-width:1000px;
-    margin:auto;
+.language-btns {
+    text-align:center;
     padding:20px;
 }
-
-.section{
-    display:none;
-    animation: fade 0.6s ease-in-out;
-}
-
-.section.active{
-    display:block;
-}
-
-@keyframes fade{
-    from{opacity:0;}
-    to{opacity:1;}
-}
-
-button{
-    padding:10px 18px;
-    margin:6px;
+button {
+    padding:10px 20px;
+    margin:5px;
+    background:#4b0082;
     border:none;
-    border-radius:6px;
-    background:white;
-    color:#4b0082;
-    font-weight:bold;
+    color:white;
     cursor:pointer;
 }
-
-button:hover{
-    background:#e0c3ff;
+button:hover {
+    background:#6a0dad;
 }
-
-footer{
-    margin-top:60px;
-    padding:20px;
-    font-size:14px;
-    opacity:0.8;
-}
-
-.email{
-    margin-top:30px;
-    font-size:16px;
+.hidden {display:none;}
+footer {
+    text-align:center;
+    padding:30px;
+    background:#111;
 }
 </style>
+
+<script>
+function showLang(lang){
+    var sections = document.querySelectorAll('.lang');
+    sections.forEach(function(sec){
+        sec.style.display="none";
+    });
+    document.getElementById(lang).style.display="block";
+}
+</script>
+
 </head>
 
 <body>
 
 <header>
 <h1>PHK-QUANTUM</h1>
-<h2>Quantum Intelligence | AI Fusion | Energy Sovereignty</h2>
+<p>Quantum Computing · AI · Future Intelligence Infrastructure</p>
+</header>
 
-<div>
+<div class="language-btns">
 <button onclick="showLang('en')">English</button>
 <button onclick="showLang('ko')">한국어</button>
 <button onclick="showLang('zh')">中文</button>
 <button onclick="showLang('ar')">العربية</button>
-<button onclick="showLang('ja')">日本語</button>
 <button onclick="showLang('es')">Español</button>
 </div>
-</header>
-
-<div class="container">
 
 <!-- ENGLISH -->
-<div id="en" class="section active">
-<h2>Welcome to PHK-QUANTUM</h2>
-<p>
-PHK-QUANTUM is a next-generation platform focused on Quantum Computing,
-Artificial Intelligence, and advanced Energy Synchronization Systems.
-</p>
-<p>
-We design:
-• Quantum Security Infrastructure  
-• AI + Quantum Hybrid Architectures  
-• Energy Independence Models  
-• Digital Sovereignty Frameworks  
-• Scientific Innovation Ecosystems  
-</p>
-<p>
-This is not just research.  
-This is civilization engineering.
-</p>
-</div>
+<section id="en" class="lang">
+<h2>About PHK-QUANTUM</h2>
+<p>PHK-QUANTUM is a next-generation research initiative dedicated to advancing Quantum Computing and Artificial Intelligence integration.</p>
+
+<h2>What is Quantum Computing?</h2>
+<p>Quantum computing leverages quantum mechanics principles such as superposition and entanglement to perform complex calculations exponentially faster than classical computers.</p>
+
+<h2>Mission</h2>
+<ul>
+<li>Develop scalable quantum algorithms</li>
+<li>Integrate AI with quantum processors</li>
+<li>Build future financial & scientific modeling systems</li>
+<li>Create decentralized quantum cloud infrastructure</li>
+</ul>
+
+<h2>Vision</h2>
+<p>To lead the transformation of global digital systems by unlocking computational power beyond classical limits.</p>
+
+<h2>Applications</h2>
+<p>Quantum computing can revolutionize cryptography, finance, energy modeling, drug discovery, AI acceleration, and blockchain optimization.</p>
+</section>
 
 <!-- KOREAN -->
-<div id="ko" class="section">
-<h2>PHK-QUANTUM에 오신 것을 환영합니다</h2>
-<p>
-PHK-QUANTUM은 양자컴퓨터, 인공지능,
-그리고 에너지 동기화 시스템을 기반으로
-차세대 문명 인프라를 설계하는 플랫폼입니다.
-</p>
-<p>
-우리는 다음을 구축합니다:
-• 양자 보안 인프라  
-• AI + 양자 융합 구조  
-• 에너지 독립 모델  
-• 디지털 주권 프레임워크  
-• 과학 혁신 생태계  
-</p>
-<p>
-이것은 단순한 연구가 아닙니다.  
-문명 공학입니다.
-</p>
-</div>
+<section id="ko" class="lang hidden">
+<h2>PHK-QUANTUM 소개</h2>
+<p>PHK-QUANTUM은 양자컴퓨터와 인공지능을 통합하여 미래 지능 인프라를 구축하는 차세대 연구 프로젝트입니다.</p>
+
+<h2>양자컴퓨터란?</h2>
+<p>양자컴퓨터는 중첩과 얽힘이라는 양자역학 원리를 활용하여 기존 컴퓨터보다 압도적으로 빠른 연산을 수행하는 기술입니다.</p>
+
+<h2>미션</h2>
+<ul>
+<li>확장 가능한 양자 알고리즘 개발</li>
+<li>AI와 양자 프로세서 융합</li>
+<li>금융·과학 모델링 시스템 구축</li>
+<li>탈중앙화 양자 클라우드 인프라 구축</li>
+</ul>
+
+<h2>비전</h2>
+<p>기존 디지털 시스템의 한계를 넘어서는 계산 능력을 통해 세계 시스템을 혁신합니다.</p>
+
+<h2>응용 분야</h2>
+<p>암호화, 금융, 에너지 모델링, 신약 개발, AI 가속, 블록체인 최적화 등 다양한 산업 혁신이 가능합니다.</p>
+</section>
 
 <!-- CHINESE -->
-<div id="zh" class="section">
-<h2>欢迎来到 PHK-QUANTUM</h2>
-<p>
-PHK-QUANTUM 是一个专注于量子计算、
-人工智能和能源同步系统的未来创新平台。
-</p>
-<p>
-我们设计：
-• 量子安全基础设施  
-• 人工智能与量子混合架构  
-• 能源独立模型  
-• 数字主权框架  
-• 科学创新生态系统  
-</p>
-<p>
-这不仅是研究，  
-而是文明工程。
-</p>
-</div>
+<section id="zh" class="lang hidden">
+<h2>PHK-QUANTUM 介绍</h2>
+<p>PHK-QUANTUM 是一个专注于量子计算与人工智能融合的未来科技项目。</p>
+
+<h2>什么是量子计算？</h2>
+<p>量子计算利用量子叠加与量子纠缠原理，实现远超传统计算机的运算能力。</p>
+
+<h2>使命</h2>
+<ul>
+<li>开发可扩展量子算法</li>
+<li>融合AI与量子处理器</li>
+<li>建设未来金融与科学建模系统</li>
+<li>打造去中心化量子云平台</li>
+</ul>
+
+<h2>愿景</h2>
+<p>突破传统计算极限，引领全球数字系统升级。</p>
+</section>
 
 <!-- ARABIC -->
-<div id="ar" class="section" dir="rtl">
-<h2>مرحبًا بكم في PHK-QUANTUM</h2>
-<p>
-PHK-QUANTUM هي منصة مستقبلية
-تركز على الحوسبة الكمومية
-والذكاء الاصطناعي وأنظمة مزامنة الطاقة.
-</p>
-<p>
-نقوم بتصميم:
-• بنية تحتية للأمن الكمومي  
-• أنظمة هجينة بين الذكاء الاصطناعي والكم  
-• نماذج استقلال الطاقة  
-• أطر السيادة الرقمية  
-• منظومات الابتكار العلمي  
-</p>
-<p>
-هذا ليس مجرد بحث،  
-بل هندسة حضارية.
-</p>
-</div>
+<section id="ar" class="lang hidden" dir="rtl">
+<h2>حول PHK-QUANTUM</h2>
+<p>مشروع PHK-QUANTUM يركز على دمج الحوسبة الكمومية مع الذكاء الاصطناعي لبناء بنية تحتية رقمية مستقبلية.</p>
 
-<!-- JAPANESE -->
-<div id="ja" class="section">
-<h2>PHK-QUANTUMへようこそ</h2>
-<p>
-PHK-QUANTUMは量子コンピューティング、
-人工知能、エネルギー同期システムに
-特化した次世代イノベーションプラットフォームです。
-</p>
-<p>
-私たちは構築します：
-• 量子セキュリティ基盤  
-• AIと量子のハイブリッド構造  
-• エネルギー独立モデル  
-• デジタル主権フレームワーク  
-• 科学イノベーションエコシステム  
-</p>
-<p>
-これは単なる研究ではありません。  
-文明設計です。
-</p>
-</div>
+<h2>ما هي الحوسبة الكمومية؟</h2>
+<p>تعتمد على مبادئ التراكب والتشابك الكمي لتحقيق سرعة حسابية تفوق الأنظمة التقليدية.</p>
+
+<h2>الرؤية</h2>
+<p>قيادة التحول الرقمي العالمي من خلال إطلاق قوة حسابية غير مسبوقة.</p>
+</section>
 
 <!-- SPANISH -->
-<div id="es" class="section">
-<h2>Bienvenido a PHK-QUANTUM</h2>
-<p>
-PHK-QUANTUM es una plataforma de próxima generación
-centrada en Computación Cuántica,
-Inteligencia Artificial y Sistemas de Sincronización Energética.
-</p>
-<p>
-Diseñamos:
-• Infraestructura de Seguridad Cuántica  
-• Arquitecturas Híbridas IA + Cuántica  
-• Modelos de Independencia Energética  
-• Marcos de Soberanía Digital  
-• Ecosistemas de Innovación Científica  
-</p>
-<p>
-No es solo investigación.  
-Es ingeniería de civilización.
-</p>
-</div>
+<section id="es" class="lang hidden">
+<h2>Acerca de PHK-QUANTUM</h2>
+<p>PHK-QUANTUM es una iniciativa enfocada en la integración de la computación cuántica y la inteligencia artificial.</p>
 
-<div class="email">
-Contact: info@phkquantum.com
-</div>
+<h2>¿Qué es la computación cuántica?</h2>
+<p>Utiliza principios cuánticos como superposición y entrelazamiento para resolver problemas complejos a velocidades extraordinarias.</p>
 
-</div>
+<h2>Visión</h2>
+<p>Transformar la infraestructura digital global mediante poder computacional avanzado.</p>
+</section>
 
 <footer>
-© 2026 PHK-QUANTUM | Quantum Intelligence for a New Era
+<p>PHK-QUANTUM © 2026 | Future Beyond Limits</p>
+<p>Contact: info@phkquantum.com</p>
 </footer>
-
-<script>
-function showLang(lang){
-    var sections = document.querySelectorAll('.section');
-    sections.forEach(function(sec){
-        sec.classList.remove('active');
-    });
-    document.getElementById(lang).classList.add('active');
-}
-</script>
 
 </body>
 </html>
