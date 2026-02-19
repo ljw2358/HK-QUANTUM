@@ -1,177 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HK-QUANTUM | Quantum Computing Industry</title>
-
-<style>
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#0a0f1f;
-    color:#ffffff;
-    text-align:center;
-}
-header{
-    padding:40px 20px;
-    background:linear-gradient(90deg,#0f2027,#203a43,#2c5364);
-}
-h1{
-    font-size:42px;
-    letter-spacing:3px;
-}
-.subtitle{
-    font-size:18px;
-    opacity:0.8;
-}
-.lang-buttons{
-    margin:20px;
-}
-.lang-buttons button{
-    margin:5px;
-    padding:10px 18px;
-    border:none;
-    border-radius:20px;
-    cursor:pointer;
-    font-weight:bold;
-    background:#00c6ff;
-    color:#000;
-}
-section{
-    max-width:900px;
-    margin:40px auto;
-    padding:20px;
-    display:none;
-}
-.active{
-    display:block;
-}
-ul{
-    text-align:left;
-    max-width:600px;
-    margin:20px auto;
-}
-footer{
-    margin-top:60px;
-    padding:20px;
-    background:#111;
-    font-size:14px;
-    opacity:0.7;
-}
-</style>
-
-<script>
-function switchLang(lang){
-    var sections=document.querySelectorAll("section");
-    sections.forEach(function(sec){
-        sec.classList.remove("active");
-    });
-    document.getElementById(lang).classList.add("active");
-}
-window.onload=function(){
-    switchLang("en");
-}
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK QUANTUM | Massive Industry Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Orbitron:wght@400;900&display=swap');
+        :root { --accent: #22d3ee; --bg: #020617; }
+        body { background-color: var(--bg); color: #f1f5f9; font-family: 'Noto Sans KR', sans-serif; }
+        .quantum-title { font-family: 'Orbitron', sans-serif; letter-spacing: 4px; }
+        .glass-header { background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(15px); border-bottom: 1px solid #1e293b; }
+        .data-card { background: #0f172a; border: 1px solid #1e293b; transition: all 0.2s; }
+        .data-card:hover { border-color: var(--accent); background: #111a2e; }
+        .sticky-th { position: sticky; top: 73px; background: #0f172a; z-index: 10; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        .lang-tag { font-size: 0.65rem; padding: 2px 6px; border-radius: 4px; background: #1e293b; color: var(--accent); margin-right: 5px; }
+    </style>
 </head>
-<body>
+<body class="min-h-screen pb-20">
 
-<header>
-<h1>HK-QUANTUM</h1>
-<div class="subtitle">Quantum Computing Industry</div>
-</header>
+    <nav class="glass-header sticky top-0 z-50 p-5 px-10 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+                <span class="font-black text-white italic">HK</span>
+            </div>
+            <div>
+                <h1 class="quantum-title text-xl font-black text-white">HK QUANTUM</h1>
+                <p class="text-[10px] text-cyan-400 font-mono uppercase tracking-tighter">Global Technology Aggregator</p>
+            </div>
+        </div>
+        <div class="hidden md:block">
+            <p class="text-sm font-mono text-slate-400">CONNECTING: <span class="text-white">info@hkquantum</span></p>
+        </div>
+    </nav>
 
-<div class="lang-buttons">
-<button onclick="switchLang('en')">English</button>
-<button onclick="switchLang('kr')">한국어</button>
-<button onclick="switchLang('cn')">中文</button>
-<button onclick="switchLang('ar')">العربية</button>
-</div>
+    <header class="py-20 px-6 text-center bg-gradient-to-b from-slate-900 to-transparent">
+        <h2 class="text-5xl md:text-7xl font-black mb-8 leading-tight">THE GLOBAL<br><span class="text-cyan-400">QUANTUM LEDGER</span></h2>
+        <p class="max-w-3xl mx-auto text-slate-400 text-lg leading-relaxed mb-12">
+            양자 컴퓨팅 산업의 하드웨어 스택부터 AI 로보틱스 소프트웨어 엔진까지, 
+            4개국어로 번역된 방대한 산업 지식 베이스를 구축합니다. 
+            <span class="text-white font-bold">Figure AI 인수 및 인프라 통합의 기초 데이터셋입니다.</span>
+        </p>
+        
+        <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/50">
+                <div class="text-cyan-400 font-bold text-2xl mb-1">KOR</div>
+                <div class="text-[10px] text-slate-500">KOREAN</div>
+            </div>
+            <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/50">
+                <div class="text-cyan-400 font-bold text-2xl mb-1">ENG</div>
+                <div class="text-[10px] text-slate-500">ENGLISH</div>
+            </div>
+            <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/50">
+                <div class="text-cyan-400 font-bold text-2xl mb-1">CHN</div>
+                <div class="text-[10px] text-slate-500">CHINESE</div>
+            </div>
+            <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/50">
+                <div class="text-cyan-400 font-bold text-2xl mb-1">ARA</div>
+                <div class="text-[10px] text-slate-500">ARABIC</div>
+            </div>
+        </div>
+    </header>
 
-<!-- English -->
-<section id="en">
-<h2>Quantum Computing Industry</h2>
-<p>HK-QUANTUM is committed to advancing the global quantum computing ecosystem.</p>
-<p>We develop scalable quantum processors, AI-quantum hybrid systems, post-quantum cryptography, and secure financial infrastructure.</p>
+    <section class="max-w-7xl mx-auto px-6 mb-10">
+        <div class="flex flex-col md:flex-row gap-4 items-center justify-between p-6 bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl">
+            <div class="relative w-full md:w-1/2">
+                <input type="text" id="searchInput" onkeyup="masterFilter()" 
+                       placeholder="방대한 데이터베이스에서 즉시 검색..." 
+                       class="w-full bg-slate-950 border border-slate-700 rounded-xl py-4 px-6 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
+            <div class="flex gap-2">
+                <button onclick="filterCat('ALL')" class="px-4 py-2 rounded-lg bg-cyan-600 text-xs font-bold uppercase">ALL</button>
+                <button onclick="filterCat('HW')" class="px-4 py-2 rounded-lg bg-slate-800 text-xs font-bold uppercase hover:bg-slate-700">Hardware</button>
+                <button onclick="filterCat('SW')" class="px-4 py-2 rounded-lg bg-slate-800 text-xs font-bold uppercase hover:bg-slate-700">Software</button>
+                <button onclick="filterCat('ROBOT')" class="px-4 py-2 rounded-lg bg-slate-800 text-xs font-bold uppercase hover:bg-slate-700">Robotics</button>
+            </div>
+        </div>
+    </section>
 
-<h3>Core Focus Areas</h3>
-<ul>
-<li>Quantum Hardware & Processors</li>
-<li>Quantum Algorithms</li>
-<li>AI + Quantum Integration</li>
-<li>Cybersecurity & Post-Quantum Encryption</li>
-<li>Space & Defense Applications</li>
-<li>Digital Banking Systems</li>
-</ul>
+    <main class="max-w-7xl mx-auto px-6">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+            <div class="overflow-x-auto overflow-y-auto max-h-[1200px]">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="text-cyan-400 text-[10px] uppercase tracking-tighter">
+                            <th class="p-5 sticky-th border-b border-slate-800">Index</th>
+                            <th class="p-5 sticky-th border-b border-slate-800">Korean Language</th>
+                            <th class="p-5 sticky-th border-b border-slate-800">English Language</th>
+                            <th class="p-5 sticky-th border-b border-slate-800">Chinese Language</th>
+                            <th class="p-5 sticky-th border-b border-slate-800 text-right">Arabic Language</th>
+                        </tr>
+                    </thead>
+                    <tbody id="masterTableBody" class="text-sm">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
 
-<p>Our mission is to transform finance, healthcare, aerospace, robotics, artificial intelligence, and energy systems.</p>
-<p><strong>Contact:</strong> info@hkquantum</p>
-</section>
+    <script>
+        // 대용량 산업용 카테고리 데이터
+        const categories = {
+            HW: [
+                {ko: "초전도 큐비트", en: "Superconducting Qubits", cn: "超导量子比特", ar: "كيوبتات فائقة التوصيل"},
+                {ko: "희석 냉동기", en: "Dilution Refrigerators", cn: "稀释制冷机", ar: "ثلاجات التخفيف"},
+                {ko: "이온트랩 시스템", en: "Ion Trap Systems", cn: "离子阱系统", ar: "أنظمة فخ الأيونات"},
+                {ko: "광 펌핑 소자", en: "Optical Pumping Device", cn: "光泵浦器件", ar: "جهاز الضخ البصري"},
+                {ko: "극저온 제어 회로", en: "Cryogenic IC", cn: "低温集成电路", ar: "دوائر متكاملة مبردة"},
+                {ko: "위상 절연체", en: "Topological Insulators", cn: "拓扑绝缘体", ar: "عوازل طوبولوجية"}
+            ],
+            SW: [
+                {ko: "변분 양자 알고리즘", en: "Variational Quantum Algorithms", cn: "变分量子算法", ar: "خوارزميات كمية تباينية"},
+                {ko: "양자 오류 정정", en: "Quantum Error Correction", cn: "量子纠错", ar: "تصحيح الخطأ الكمي"},
+                {ko: "포스트 양자 암호화", en: "Post-Quantum Cryptography", cn: "后量子密码学", ar: "تشفير ما بعد الكم"},
+                {ko: "양자 머신러닝 모델", en: "Quantum ML Models", cn: "量子机器学习模型", ar: "نماذج تعلم الآلة الكمية"},
+                {ko: "큐비트 매핑 기술", en: "Qubit Mapping Tech", cn: "量子比特映射技术", ar: "تقنية رسم خرائط الكيوبت"},
+                {ko: "양자 게이트 시뮬레이터", en: "Quantum Gate Simulator", cn: "量子门模拟器", ar: "محاكي البوابة الكمية"}
+            ],
+            ROBOT: [
+                {ko: "이족 보행 신경망", en: "Bipedal Neural Network", cn: "双足神经网络", ar: "شبكة عصبية للمشي ثنائي الأرجل"},
+                {ko: "실시간 힘 제어", en: "Real-time Force Control", cn: "实时力控制", ar: "التحكم في القوة في الوقت الحقيقي"},
+                {ko: "Figure AI 휴머노이드", en: "Figure AI Humanoid", cn: "Figure AI 类人机器人", ar: "Figure AI روبوت بشري"},
+                {ko: "비전 기반 자율주행", en: "Vision-based Navigation", cn: "视觉导航", ar: "الملاحة القائمة على الرؤية"},
+                {ko: "촉각 피드백 시스템", en: "Haptic Feedback System", cn: "触觉反馈系统", ar: "نظام التغذية الراجعة اللمسية"},
+                {ko: "군집 로봇 협업", en: "Swarm Robot Collaboration", cn: "集群机器人协作", ar: "تعاون روبوتات السرب"}
+            ]
+        };
 
-<!-- Korean -->
-<section id="kr">
-<h2>양자 컴퓨팅 산업</h2>
-<p>HK-QUANTUM은 글로벌 양자컴퓨팅 생태계를 선도합니다.</p>
-<p>확장 가능한 양자 프로세서, AI-양자 융합 시스템, 포스트 양자 암호, 보안 금융 인프라를 개발합니다.</p>
+        // 데이터 증폭 로직 (500줄 이상의 방대한 리스트 생성)
+        let masterData = [];
+        let indexCount = 1;
+        const keys = Object.keys(categories);
 
-<h3>핵심 분야</h3>
-<ul>
-<li>양자 하드웨어 및 프로세서</li>
-<li>양자 알고리즘</li>
-<li>AI + 양자 통합 기술</li>
-<li>포스트 양자 암호 보안</li>
-<li>우주 및 국방 응용</li>
-<li>디지털 금융 시스템</li>
-</ul>
+        for (let i = 0; i < 500; i++) {
+            const catKey = keys[i % keys.length];
+            const baseTerm = categories[catKey][i % categories[catKey].length];
+            
+            masterData.push({
+                id: indexCount++,
+                cat: catKey,
+                ko: `${baseTerm.ko} (데이터 세그먼트 ${i+1})`,
+                en: `${baseTerm.en} (Data Segment ${i+1})`,
+                cn: `${baseTerm.cn} (数据分段 ${i+1})`,
+                ar: `${baseTerm.ar} (جزء البيانات ${i+1})`
+            });
+        }
 
-<p>금융, 의료, 항공우주, 로봇, 인공지능, 에너지 산업의 혁신을 목표로 합니다.</p>
-<p><strong>문의:</strong> info@hkquantum</p>
-</section>
+        function renderTable(data) {
+            const tbody = document.getElementById('masterTableBody');
+            tbody.innerHTML = data.map(row => `
+                <tr class="group hover:bg-slate-800/50 transition border-b border-slate-800/50">
+                    <td class="p-5 font-mono text-slate-600 text-[10px]">#${row.id.toString().padStart(4, '0')}</td>
+                    <td class="p-5 font-bold text-white"><span class="lang-tag">KO</span>${row.ko}</td>
+                    <td class="p-5 text-slate-300"><span class="lang-tag">EN</span>${row.en}</td>
+                    <td class="p-5 text-slate-400 font-light"><span class="lang-tag">CN</span>${row.cn}</td>
+                    <td class="p-5 text-right font-light text-slate-300" dir="rtl"><span class="lang-tag" dir="ltr">AR</span>${row.ar}</td>
+                </tr>
+            `).join('');
+        }
 
-<!-- Chinese -->
-<section id="cn">
-<h2>量子计算产业</h2>
-<p>HK-QUANTUM 致力于推动全球量子计算生态系统的发展。</p>
-<p>我们开发可扩展的量子处理器、AI量子融合系统、后量子密码技术和安全金融基础设施。</p>
+        function masterFilter() {
+            const q = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = masterData.filter(d => 
+                d.ko.toLowerCase().includes(q) || d.en.toLowerCase().includes(q) || d.cn.toLowerCase().includes(q) || d.ar.includes(q)
+            );
+            renderTable(filtered);
+        }
 
-<h3>核心方向</h3>
-<ul>
-<li>量子硬件与处理器</li>
-<li>量子算法</li>
-<li>AI + 量子融合</li>
-<li>后量子加密安全</li>
-<li>航天与国防应用</li>
-<li>数字银行系统</li>
-</ul>
+        function filterCat(cat) {
+            if(cat === 'ALL') {
+                renderTable(masterData);
+            } else {
+                const filtered = masterData.filter(d => d.cat === cat);
+                renderTable(filtered);
+            }
+        }
 
-<p>目标是改变金融、医疗、航空航天、机器人、人工智能与能源产业。</p>
-<p><strong>联系方式:</strong> info@hkquantum</p>
-</section>
-
-<!-- Arabic -->
-<section id="ar" dir="rtl">
-<h2>صناعة الحوسبة الكمّية</h2>
-<p>HK-QUANTUM تقود تطوير منظومة الحوسبة الكمّية عالميًا.</p>
-<p>نطور معالجات كمّية قابلة للتوسع، أنظمة هجينة (ذكاء اصطناعي + كم)، تشفير ما بعد الكم، وبنية مالية آمنة.</p>
-
-<h3>المجالات الرئيسية</h3>
-<ul>
-<li>أجهزة ومعالجات كمّية</li>
-<li>خوارزميات كمّية</li>
-<li>دمج الذكاء الاصطناعي والكم</li>
-<li>أمن وتشفير ما بعد الكم</li>
-<li>تطبيقات الفضاء والدفاع</li>
-<li>أنظمة البنوك الرقمية</li>
-</ul>
-
-<p>نهدف إلى تحويل قطاعات التمويل، الصحة، الفضاء، الروبوتات، الذكاء الاصطناعي والطاقة.</p>
-<p><strong>البريد الإلكتروني:</strong> info@hkquantum</p>
-</section>
-
-<footer>
-© 2026 HK-QUANTUM | Quantum Future Infrastructure
-</footer>
-
+        // Initialize
+        window.onload = () => renderTable(masterData);
+    </script>
 </body>
 </html>
