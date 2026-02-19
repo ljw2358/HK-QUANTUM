@@ -3,169 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PHK-QUANTUM | Future of Quantum Intelligence</title>
+<title>HK-QUANTUM | Quantum Computing Industry</title>
 
 <style>
-body {
+body{
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#0b0b1f;
-    color:white;
-}
-header {
-    background:linear-gradient(90deg,#1a0033,#2d0066,#4b0082);
-    padding:40px;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0a0f1f;
+    color:#ffffff;
     text-align:center;
 }
-h1 {font-size:42px; margin:0;}
-h2 {color:#b388ff;}
-section {
-    padding:50px 10%;
-    border-bottom:1px solid rgba(255,255,255,0.1);
+header{
+    padding:40px 20px;
+    background:linear-gradient(90deg,#0f2027,#203a43,#2c5364);
 }
-.language-btns {
-    text-align:center;
-    padding:20px;
+h1{
+    font-size:42px;
+    letter-spacing:3px;
 }
-button {
-    padding:10px 20px;
+.subtitle{
+    font-size:18px;
+    opacity:0.8;
+}
+.lang-buttons{
+    margin:20px;
+}
+.lang-buttons button{
     margin:5px;
-    background:#4b0082;
+    padding:10px 18px;
     border:none;
-    color:white;
+    border-radius:20px;
     cursor:pointer;
+    font-weight:bold;
+    background:#00c6ff;
+    color:#000;
 }
-button:hover {
-    background:#6a0dad;
+section{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+    display:none;
 }
-.hidden {display:none;}
-footer {
-    text-align:center;
-    padding:30px;
+.active{
+    display:block;
+}
+ul{
+    text-align:left;
+    max-width:600px;
+    margin:20px auto;
+}
+footer{
+    margin-top:60px;
+    padding:20px;
     background:#111;
+    font-size:14px;
+    opacity:0.7;
 }
 </style>
 
 <script>
-function showLang(lang){
-    var sections = document.querySelectorAll('.lang');
+function switchLang(lang){
+    var sections=document.querySelectorAll("section");
     sections.forEach(function(sec){
-        sec.style.display="none";
+        sec.classList.remove("active");
     });
-    document.getElementById(lang).style.display="block";
+    document.getElementById(lang).classList.add("active");
+}
+window.onload=function(){
+    switchLang("en");
 }
 </script>
 
 </head>
-
 <body>
 
 <header>
-<h1>PHK-QUANTUM</h1>
-<p>Quantum Computing · AI · Future Intelligence Infrastructure</p>
+<h1>HK-QUANTUM</h1>
+<div class="subtitle">Quantum Computing Industry</div>
 </header>
 
-<div class="language-btns">
-<button onclick="showLang('en')">English</button>
-<button onclick="showLang('ko')">한국어</button>
-<button onclick="showLang('zh')">中文</button>
-<button onclick="showLang('ar')">العربية</button>
-<button onclick="showLang('es')">Español</button>
+<div class="lang-buttons">
+<button onclick="switchLang('en')">English</button>
+<button onclick="switchLang('kr')">한국어</button>
+<button onclick="switchLang('cn')">中文</button>
+<button onclick="switchLang('ar')">العربية</button>
 </div>
 
-<!-- ENGLISH -->
-<section id="en" class="lang">
-<h2>About PHK-QUANTUM</h2>
-<p>PHK-QUANTUM is a next-generation research initiative dedicated to advancing Quantum Computing and Artificial Intelligence integration.</p>
+<!-- English -->
+<section id="en">
+<h2>Quantum Computing Industry</h2>
+<p>HK-QUANTUM is committed to advancing the global quantum computing ecosystem.</p>
+<p>We develop scalable quantum processors, AI-quantum hybrid systems, post-quantum cryptography, and secure financial infrastructure.</p>
 
-<h2>What is Quantum Computing?</h2>
-<p>Quantum computing leverages quantum mechanics principles such as superposition and entanglement to perform complex calculations exponentially faster than classical computers.</p>
-
-<h2>Mission</h2>
+<h3>Core Focus Areas</h3>
 <ul>
-<li>Develop scalable quantum algorithms</li>
-<li>Integrate AI with quantum processors</li>
-<li>Build future financial & scientific modeling systems</li>
-<li>Create decentralized quantum cloud infrastructure</li>
+<li>Quantum Hardware & Processors</li>
+<li>Quantum Algorithms</li>
+<li>AI + Quantum Integration</li>
+<li>Cybersecurity & Post-Quantum Encryption</li>
+<li>Space & Defense Applications</li>
+<li>Digital Banking Systems</li>
 </ul>
 
-<h2>Vision</h2>
-<p>To lead the transformation of global digital systems by unlocking computational power beyond classical limits.</p>
-
-<h2>Applications</h2>
-<p>Quantum computing can revolutionize cryptography, finance, energy modeling, drug discovery, AI acceleration, and blockchain optimization.</p>
+<p>Our mission is to transform finance, healthcare, aerospace, robotics, artificial intelligence, and energy systems.</p>
+<p><strong>Contact:</strong> info@hkquantum</p>
 </section>
 
-<!-- KOREAN -->
-<section id="ko" class="lang hidden">
-<h2>PHK-QUANTUM 소개</h2>
-<p>PHK-QUANTUM은 양자컴퓨터와 인공지능을 통합하여 미래 지능 인프라를 구축하는 차세대 연구 프로젝트입니다.</p>
+<!-- Korean -->
+<section id="kr">
+<h2>양자 컴퓨팅 산업</h2>
+<p>HK-QUANTUM은 글로벌 양자컴퓨팅 생태계를 선도합니다.</p>
+<p>확장 가능한 양자 프로세서, AI-양자 융합 시스템, 포스트 양자 암호, 보안 금융 인프라를 개발합니다.</p>
 
-<h2>양자컴퓨터란?</h2>
-<p>양자컴퓨터는 중첩과 얽힘이라는 양자역학 원리를 활용하여 기존 컴퓨터보다 압도적으로 빠른 연산을 수행하는 기술입니다.</p>
-
-<h2>미션</h2>
+<h3>핵심 분야</h3>
 <ul>
-<li>확장 가능한 양자 알고리즘 개발</li>
-<li>AI와 양자 프로세서 융합</li>
-<li>금융·과학 모델링 시스템 구축</li>
-<li>탈중앙화 양자 클라우드 인프라 구축</li>
+<li>양자 하드웨어 및 프로세서</li>
+<li>양자 알고리즘</li>
+<li>AI + 양자 통합 기술</li>
+<li>포스트 양자 암호 보안</li>
+<li>우주 및 국방 응용</li>
+<li>디지털 금융 시스템</li>
 </ul>
 
-<h2>비전</h2>
-<p>기존 디지털 시스템의 한계를 넘어서는 계산 능력을 통해 세계 시스템을 혁신합니다.</p>
-
-<h2>응용 분야</h2>
-<p>암호화, 금융, 에너지 모델링, 신약 개발, AI 가속, 블록체인 최적화 등 다양한 산업 혁신이 가능합니다.</p>
+<p>금융, 의료, 항공우주, 로봇, 인공지능, 에너지 산업의 혁신을 목표로 합니다.</p>
+<p><strong>문의:</strong> info@hkquantum</p>
 </section>
 
-<!-- CHINESE -->
-<section id="zh" class="lang hidden">
-<h2>PHK-QUANTUM 介绍</h2>
-<p>PHK-QUANTUM 是一个专注于量子计算与人工智能融合的未来科技项目。</p>
+<!-- Chinese -->
+<section id="cn">
+<h2>量子计算产业</h2>
+<p>HK-QUANTUM 致力于推动全球量子计算生态系统的发展。</p>
+<p>我们开发可扩展的量子处理器、AI量子融合系统、后量子密码技术和安全金融基础设施。</p>
 
-<h2>什么是量子计算？</h2>
-<p>量子计算利用量子叠加与量子纠缠原理，实现远超传统计算机的运算能力。</p>
-
-<h2>使命</h2>
+<h3>核心方向</h3>
 <ul>
-<li>开发可扩展量子算法</li>
-<li>融合AI与量子处理器</li>
-<li>建设未来金融与科学建模系统</li>
-<li>打造去中心化量子云平台</li>
+<li>量子硬件与处理器</li>
+<li>量子算法</li>
+<li>AI + 量子融合</li>
+<li>后量子加密安全</li>
+<li>航天与国防应用</li>
+<li>数字银行系统</li>
 </ul>
 
-<h2>愿景</h2>
-<p>突破传统计算极限，引领全球数字系统升级。</p>
+<p>目标是改变金融、医疗、航空航天、机器人、人工智能与能源产业。</p>
+<p><strong>联系方式:</strong> info@hkquantum</p>
 </section>
 
-<!-- ARABIC -->
-<section id="ar" class="lang hidden" dir="rtl">
-<h2>حول PHK-QUANTUM</h2>
-<p>مشروع PHK-QUANTUM يركز على دمج الحوسبة الكمومية مع الذكاء الاصطناعي لبناء بنية تحتية رقمية مستقبلية.</p>
+<!-- Arabic -->
+<section id="ar" dir="rtl">
+<h2>صناعة الحوسبة الكمّية</h2>
+<p>HK-QUANTUM تقود تطوير منظومة الحوسبة الكمّية عالميًا.</p>
+<p>نطور معالجات كمّية قابلة للتوسع، أنظمة هجينة (ذكاء اصطناعي + كم)، تشفير ما بعد الكم، وبنية مالية آمنة.</p>
 
-<h2>ما هي الحوسبة الكمومية؟</h2>
-<p>تعتمد على مبادئ التراكب والتشابك الكمي لتحقيق سرعة حسابية تفوق الأنظمة التقليدية.</p>
+<h3>المجالات الرئيسية</h3>
+<ul>
+<li>أجهزة ومعالجات كمّية</li>
+<li>خوارزميات كمّية</li>
+<li>دمج الذكاء الاصطناعي والكم</li>
+<li>أمن وتشفير ما بعد الكم</li>
+<li>تطبيقات الفضاء والدفاع</li>
+<li>أنظمة البنوك الرقمية</li>
+</ul>
 
-<h2>الرؤية</h2>
-<p>قيادة التحول الرقمي العالمي من خلال إطلاق قوة حسابية غير مسبوقة.</p>
-</section>
-
-<!-- SPANISH -->
-<section id="es" class="lang hidden">
-<h2>Acerca de PHK-QUANTUM</h2>
-<p>PHK-QUANTUM es una iniciativa enfocada en la integración de la computación cuántica y la inteligencia artificial.</p>
-
-<h2>¿Qué es la computación cuántica?</h2>
-<p>Utiliza principios cuánticos como superposición y entrelazamiento para resolver problemas complejos a velocidades extraordinarias.</p>
-
-<h2>Visión</h2>
-<p>Transformar la infraestructura digital global mediante poder computacional avanzado.</p>
+<p>نهدف إلى تحويل قطاعات التمويل، الصحة، الفضاء، الروبوتات، الذكاء الاصطناعي والطاقة.</p>
+<p><strong>البريد الإلكتروني:</strong> info@hkquantum</p>
 </section>
 
 <footer>
-<p>PHK-QUANTUM © 2026 | Future Beyond Limits</p>
-<p>Contact: info@phkquantum.com</p>
+© 2026 HK-QUANTUM | Quantum Future Infrastructure
 </footer>
 
 </body>
